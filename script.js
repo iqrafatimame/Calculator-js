@@ -1,5 +1,5 @@
-let screen = document.getElementById('screen');
-let buttons =  Array.from(document.getElementsByTagName('span'))
+const screen = document.getElementById('screen');
+const buttons =  Array.from(document.getElementsByTagName('span'))
 
 buttons.map( button => {
     button.addEventListener('click', (e) => {
@@ -9,7 +9,7 @@ buttons.map( button => {
                 break;
             case '=':
                 try{
-                    screen.innerText = eval(screen.innerText);
+                    screen.innerText = eval(screen.innerText); 
                 }
                 catch{
                     screen.innerText = 'Error!';
@@ -20,6 +20,7 @@ buttons.map( button => {
         }
     })
 })
+
 
 
 
